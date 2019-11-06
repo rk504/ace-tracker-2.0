@@ -2,7 +2,10 @@
 
 {% block content %}
 <div class="student">
-    <h2>Name: {{student.name}}</h2>
+    <h2>Student Name: {{student.name}}</h2>
+    <h2>Contact Name(s): {% for contact in student.contacts.all %}
+        <a href="{% url 'contact_detail' pk=contact.pk %}">{{ contact.contact_name }} </a>
+        <br/>{% endfor %}</h2>
     <h3>Lesson Location: {{student.lesson_location}}</h3>
     <h3>Lesson Day: {{student.lesson_day}}, at {{student.lesson_time}} for {{student.lesson_length}} minutes.</h3>
 </div>

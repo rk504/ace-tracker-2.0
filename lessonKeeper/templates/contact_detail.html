@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="contact">
+    <h2>Student(s): {% for student in contact.student.all %}{{ student }}
+        <br/>
+        {% endfor %}</h2>
+    <h3>Contact: {{contact.contact_name}}, relationship: {{contact.relationship}}</h3>
+    <h3>Contact email: {{contact.email}}</h3>
+    <h3>Contact phone: {{contact.phone}}</h3>
+</div>
+<!--<p>-->
+<!--    <a href="/students/{{student.pk}}/edit"> Edit {{student.name}} </a>-->
+<!--</p>-->
+<!--<form action="/students/{{student.pk}}/delete" method="POST">-->
+<!--    {% csrf_token %}-->
+<!--    <input type="submit" value="Delete {{student.name}}">-->
+<!--</form>-->
+{% endblock %}
+
+

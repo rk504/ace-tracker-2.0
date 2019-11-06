@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Complete List of Contacts</h2>
+
+<ul>
+    {% for contact in contacts %}
+    <li> Contact:
+        <a href="{% url 'contact_detail' pk=contact.pk %}">
+        {{ contact.contact_name }}</a>
+        <br/>
+        Student(s):
+        {% for student in contact.student.all %}{{ student }}
+
+        {% endfor %}
+
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

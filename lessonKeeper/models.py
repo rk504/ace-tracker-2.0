@@ -12,10 +12,11 @@ class Student(models.Model):
         return self.name
 
 class Contact(models.Model):
-    parent_name = models.CharField(default = '', max_length=100)
+    contact_name = models.CharField(default = '', max_length=100)
+    relationship = models.CharField(default = 'Parent', max_length=180)
     email = models.CharField(max_length=180)
     phone = models.CharField(max_length= 15)
-    student = models.ManyToManyField(Student)
+    student = models.ManyToManyField(Student, related_name='contacts')
 
     def __str__(self):
-        return self.parent_name
+        return self.contact_name
