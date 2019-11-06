@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3> Current Students </h3>
+{% for student in students %}
+<div class="student">
+    <h4><a href="{% url 'student_detail' pk=student.pk %}">{{student.name}}</a></h4>
+
+</div>
+{% endfor %}
+{% endblock %}

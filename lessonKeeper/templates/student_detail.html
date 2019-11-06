@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="student">
+    <h2>Name: {{student.name}}</h2>
+    <h3>Lesson Location: {{student.lesson_location}}</h3>
+    <h3>Lesson Day: {{student.lesson_day}}, at {{student.lesson_time}} for {{student.lesson_length}} minutes.</h3>
+</div>
+<!--<p>-->
+<!--    <a href="/students/{{student.pk}}/edit"> Edit {{student.name}} </a>-->
+<!--</p>-->
+<!--<form action="/students/{{student.pk}}/delete" method="POST">-->
+<!--    {% csrf_token %}-->
+<!--    <input type="submit" value="Delete {{student.name}}">-->
+<!--</form>-->
+{% endblock %}
+
