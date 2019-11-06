@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Student, Contact
+from .forms import StudentForm, ContactForm
 
 # Create your views here.
 def student_list(request):
@@ -28,3 +29,12 @@ def contact_detail(request, pk):
     contact = Contact.objects.get(id = pk)
     return render(request, 'contact_detail.html', {'contact': contact})
 
+def contact_create(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            contact = form.save()
+            return redirect('contact_detail', pk=contact.pk)
+    else:
+        form = ContactForm()
+    return render(request, 'contact_form.html', {'form': form})
