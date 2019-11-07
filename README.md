@@ -8,7 +8,7 @@ An app that allows instructors of individual lessons to track weekly lesson time
 Initially, I wanted to create an application that would help teachers who schedule one to one lessons. My children
  have been taking string lessons for over a decade and every year we get an annual email with details about the
   entire studio contact information in case we need to miss a lesson. The format of this information is challenging
-   to sort through and can even require a log in to google to access. As a parent, I want something that is easy to
+   to sort through and can even require a Google log in to access. As a parent, I want something that is easy to
     navigate, access, and read.
     
 ## contact list
