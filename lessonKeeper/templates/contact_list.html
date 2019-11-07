@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h2>Complete List of Contacts</h2>
-
-<ul>
+<h2 class="heading">Complete List of Contacts</h2>
+<div class="list-group">
+<ul class="list-group-item">
     {% for contact in contacts %}
-    <li> Contact:
+
+    <li class="list-group-item list-group-item-action"> Contact:
         <a href="{% url 'contact_detail' pk=contact.pk %}">
         {{ contact.contact_name }}</a>
         <a href="{% url 'contact_edit' pk=contact.pk %}">(edit)</a>
@@ -18,6 +19,6 @@
     </li>
     {% endfor %}
 </ul>
-
+</div>
 <h4>Add a New Contact <a href="{% url 'contact_create' %}">(+)</a></h4>
 {% endblock %}

@@ -1,19 +1,31 @@
 {% extends 'base.html' %}
-
+<div class="card">
+    <h5 class="card-header">Featured</h5>
+    <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
 {% block content %}
-<div class="contact">
-    <h2>Student(s): {% for student in contact.student.all %}{{ student }}
+<div class="card">
+    <h2 class="card-header">Student(s):<section class="card-info">
+        {% for student in contact.student.all %}{{ student }}
 
         <br/>
-        {% endfor %}</h2>
-    <h3>Contact: {{contact.contact_name}}, relationship: {{contact.relationship}}</h3>
-    <h3>Contact email: {{contact.email}}</h3>
-    <h3>Contact phone: {{contact.phone}}</h3>
+        {% endfor %}
+        </section>
+    </h2>
+    <div class="card-body">
+    <h3 class="card-title">Contact: <section class="card-info"> {{contact.contact_name}}, relationship:
+        {{contact.relationship}}</section></h3>
+        <h4 class="card-text">Contact email: <section class="card-info"> {{contact.email}}</section></h4>
+        <h4 class="card-text">Contact phone: <section class="card-info">  {{contact.phone}}</section></h4>
 </div>
-
+</div>
 <form action="{% url 'contact_delete' pk=contact.pk %}" method="POST">
     {% csrf_token %}
-    <input type="button" class="btn btn-outline-danger btn-block" value="Delete {{contact.contact_name}} from Contacts">
+    <input type="submit" class="btn btn-outline-danger btn-block" value="Delete {{contact.contact_name}} from Contacts">
 
 </form>
 {% endblock %}
