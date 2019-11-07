@@ -8,6 +8,7 @@
     <li> Contact:
         <a href="{% url 'contact_detail' pk=contact.pk %}">
         {{ contact.contact_name }}</a>
+        <a href="{% url 'contact_edit' pk=contact.pk %}">(edit)</a>
         <br/>
         Student(s):
         {% for student in contact.student.all %}{{ student }}
