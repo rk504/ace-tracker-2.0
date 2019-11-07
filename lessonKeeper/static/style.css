@@ -37,7 +37,6 @@ nav ul {
 }
 .card-info {
     text-align: right;
-    margin-top: -30px;
 }
 
 .form {
@@ -65,4 +64,18 @@ nav ul {
 }
 .list-group {
     font-family: 'Noto Serif', serif;
+}
+.checkbox {
+    display: inline-flex;
+}
+.col-1 {
+
+    align-content: space-between;
+}
+.control-group {
+    margin-left: 5px;
+}
+label .checkbox {
+    align-content: space-around;
+    margin-left: 5px;
 }

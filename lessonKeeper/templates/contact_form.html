@@ -1,11 +1,33 @@
 {% extends 'base.html' %}
+{% load crispy_forms_tags %}
 
 {% block content %}
 <h1 class="heading">Contact Info</h1>
-<form class="list-group-item"method="POST" class="form">
+<form class="list-group-item" method="POST" >
     {% csrf_token %}
-    {{ form.as_p }}
-    <button class="btn btn-outline-secondary"  type="submit" class="save btn btn-default">Save Info</button>
+    <div class="row">
+        <div class="col-6">
+            {{ form.contact_name|as_crispy_field }}
+        </div>
+        <div class="col-6">
+            {{ form.relationship|as_crispy_field }}
+        </div>
+        <div class="col-6">
+            {{ form.email|as_crispy_field }}
+        </div>
+        <div class="col-6">
+            {{ form.phone|as_crispy_field }}
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-1">
+            {{ form.student|as_crispy_field }}
+        </div>
+    </div>
+
+
+    <button class="btn btn-outline-secondary"  type="submit" >Save Info</button>
 </form>
 
 {% endblock %}
