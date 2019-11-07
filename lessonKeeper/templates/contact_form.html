@@ -5,6 +5,6 @@
 <form method="POST" class="artist-form">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit" class="save btn btn-default">Save Info</button>
+    <button class="btn btn-outline-secondary"  type="submit" class="save btn btn-default">Save Info</button>
 </form>
 {% endblock %}

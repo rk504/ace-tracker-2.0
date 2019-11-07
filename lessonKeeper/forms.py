@@ -1,5 +1,6 @@
 from django import forms
 from .models import Student, Contact
+from django.forms import CheckboxSelectMultiple
 
 class StudentForm(forms.ModelForm):
 
@@ -12,7 +13,9 @@ class ContactForm(forms.ModelForm):
 
     class Meta:
         model = Contact
-        fields = ('student', 'contact_name', 'relationship', 'email', 'phone',)
-
+        fields = ('contact_name', 'relationship', 'email', 'phone', 'student',)
+        widgets = {
+            'student': CheckboxSelectMultiple()
+        }
 
 

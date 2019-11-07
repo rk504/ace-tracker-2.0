@@ -1,0 +1,15 @@
+.container {
+    text-align: left;
+    color: #031934;
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 20px;
+    margin: 5px;
+}
+nav {
+    display: inline-block;
+    margin: 0 120px 0 20px;
+}
+h1, h2 {
+    text-align: center;
+}
+

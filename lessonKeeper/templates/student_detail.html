@@ -12,7 +12,7 @@
 
 <form action="{% url 'student_delete' pk=student.pk %}" method="POST">
     {% csrf_token %}
-    <input type="submit" value="Remove {{student.name}} from Students">
+    <input type="button" class="btn btn-outline-danger btn-block"  type="submit" value="Remove {{student.name}} from Students">
 </form>
 {% endblock %}
 
