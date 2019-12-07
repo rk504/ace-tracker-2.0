@@ -1,7 +1,7 @@
 # lessonKeeper
 An app that allows instructors of individual lessons to track weekly lesson times and store contact information for other students to access in case of a missed session.
 
-![Homepage](lessonKeeper/static/images/homepage.png)
+![Homepage](staticfiles/images/homepage.png)
 
 ## idea and background
 
@@ -13,7 +13,7 @@ Initially, I wanted to create an application that would help teachers who schedu
     
 ## contact list
 
-![Contacts](lessonKeeper/static/images/contacts.png)
+![Contacts](staticfiles/images/contacts.png)
 
 This page is accessable from the loading page and also through the navigation bar. The easy access to the information
  is what is most important.
@@ -28,7 +28,7 @@ The app is full CRUD on both a student and contact model. That said, future deve
 
 This form view shows required fields with * and also allows contacts to register multiple children.
 
-![Form Example](lessonKeeper/static/images/contact-form-pic.png)
+![Form Example](staticfiles/images/contact-form-pic.png)
 
 ## technologies used
 <ul>
