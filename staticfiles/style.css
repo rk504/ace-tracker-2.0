@@ -1,0 +1,84 @@
+.container {
+    color: #031934;
+    background-color: rgba(0, 75, 128, 0.25);
+    padding: 25px;
+    margin: 15px;
+    font-family: 'ZCOOL XiaoWei', serif;
+
+}
+nav ul {
+    padding: 20px;
+    margin: 25px;
+    align-content: space-between;
+    background-color: #0f304b;
+    justify-content: space-around;
+    font-family: 'ZCOOL XiaoWei', serif;
+
+
+}
+.nav-link > .active {
+    color: firebrick;
+
+}
+
+.card {
+    color: #0f304b;
+    padding: 10px 20px;
+    margin: 5px 5px 20px;
+    font-family: 'Noto Serif', serif;
+}
+
+.card a {
+    text-decoration: none;
+    color: #106892;
+}
+.card h2, h3, h4 {
+    font-family: 'Noto Serif', serif;
+}
+.card-info {
+    text-align: right;
+}
+
+.form {
+    margin: 0 20px;
+}
+.heading {
+    text-align: center;
+    margin: 10px;
+    color: #0f304b;
+}
+.card-title {
+    margin: 5px 0;
+}
+.more {
+    padding: 20px 5px;
+
+}
+.btn {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.list-group {
+    font-family: 'Noto Serif', serif;
+}
+.checkbox {
+    display: inline-flex;
+}
+.col-1 {
+
+    align-content: space-between;
+}
+.control-group {
+    margin-left: 5px;
+}
+label .checkbox {
+    align-content: space-around;
+    margin-left: 5px;
+}
+new {
+    color: #f8fafb;
+}
