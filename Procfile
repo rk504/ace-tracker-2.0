@@ -1,1 +1,1 @@
-web: gunicorn lessonKeeper.wsgi
+web: gunicorn lessonKeeper_project.wsgi
