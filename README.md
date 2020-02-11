@@ -40,5 +40,6 @@ This form view shows required fields with * and also allows contacts to register
 
 ## future development
 
-I intend to deploy this to Heroku in the next few weeks as I continue to build out my portfolio. Please visit my
- [website](https://spiano.dev) for more work examples. 
+Visit the deployed version of [lessonKeeper](https://lessonkeeper.herokuapp.com/) to view the finished product. I hope to eventually add a sign in/sign up to this application so our string teachers can put it to practical use. 
+
+Please visit my [website](https://spiano.dev) for more work examples. 
