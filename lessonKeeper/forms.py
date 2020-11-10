@@ -6,7 +6,7 @@ class StudentForm(forms.ModelForm):
 
     class Meta:
         model = Student
-        fields = ('name', 'lesson_location', 'lesson_day', 'lesson_time', 'lesson_length',)
+        fields = ('name', 'lessons_left', 'lesson_day', 'lesson_time', 'lesson_length',)
 
 
 class ContactForm(forms.ModelForm):
